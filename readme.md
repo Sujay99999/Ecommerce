@@ -25,5 +25,5 @@ This server application exposes only an API that provides the details of the pro
 <!-- DATABASES -->
 
 1. Products
-   Here, we have all products of all categories in one database
-   Each product has a key named category, that places it in its respective category
+2. Users
+3. Bookings

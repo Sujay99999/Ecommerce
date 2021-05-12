@@ -32,9 +32,19 @@ exports.getProducts = async (req, res, next) => {
   try {
     // 1) Get the search query from the req.body
     const searchObj = req.body;
+    console.log(searchObj);
 
     // 2) Get all the products with the searchObj
-    const allProducts = await Product.find(searchObj);
+    const allProducts = await Product
+      // .find(searchObj)
+      .aggregate([
+        {
+          $match: { category: searchObj.category },
+        },
+        {
+          $sort: { technicalDetails: -1 },
+        },
+      ]);
 
     // 3) Send back a response with the array of products
     res.status(200).json({
