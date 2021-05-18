@@ -1,0 +1,10 @@
+@mixin font-face($family, $size: 1.6rem, $weight: normal, $style: normal) {
+	@if $family == 'Montserrat' {
+		font-family: 'Montserrat', monospace;
+  } @else if $family == 'Cabin'{
+		font-family: 'Cabin', monospace;
+  }
+	font-weight: $weight;
+	font-style: $style;
+	font-size: $size;
+}

@@ -1,0 +1,71 @@
+@import '../../sass/theme.scss';
+
+.slide {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+
+  @media only screen and (max-width: 36.5em) {
+    height: 40vh;
+  }
+
+  @media only screen and (max-width: 26em) {
+    height: 25vh;
+  }
+
+  @media only screen and (min-width: 112.5em) {
+    height: 50vh;
+  }
+
+  &_img {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &_text {
+    position: absolute;
+    top: 50%;
+    left: 5rem;
+    text-align: left;
+    transform: translateY(-40%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7rem;
+    font-weight: 800;
+    line-height: 7.2rem;
+    z-index: 2;
+    @media only screen and (max-width: 36.5em) {
+      font-size: 5rem;
+      line-height: 4rem;
+    }
+    @media only screen and (max-width: 26em) {
+      font-size: 3.5rem;
+      line-height: 3rem;
+    }
+  }
+
+  &_shade {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(
+      179.54deg,
+      rgba(0, 0, 0, 0.19) -19.45%,
+      #000000 101.2%
+    );
+  }
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 5rem 2rem;
+
+  background: linear-gradient(180deg, #000000 2.24%, #765970 54.9%);
+}

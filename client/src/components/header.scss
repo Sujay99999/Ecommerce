@@ -1,0 +1,185 @@
+@import '../sass/theme.scss';
+.header {
+  background: $primary-purple;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: space-between;
+
+  &_logo {
+    height: 5rem;
+    width: 5rem;
+    margin-left: 1rem;
+    @media only screen and (max-width: 26em) {
+      margin: 0;
+    }
+  }
+
+  &_right {
+    // background: red;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    @media only screen and (max-width: 36.5em) {
+      width: 88%;
+    }
+  }
+
+  &_form {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+    position: relative;
+    width: 55%;
+
+    @media only screen and (max-width: 36.5em) {
+      margin-right: 1rem;
+    }
+
+    @media only screen and (max-width: 26em) {
+      width: 100%;
+      margin-right: 0.5rem;
+    }
+
+    &-input {
+      width: 100%;
+      height: 3rem;
+      ly: 'Cabin', sans-serif;
+      background: linear-gradient(
+        270deg,
+        #333333 1.38%,
+        rgba(211, 211, 211, 0) 104.69%
+      );
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      padding: 0.5rem 2rem 0.5rem 2rem;
+      color: white;
+
+      @media only screen and (max-width: 26em) {
+        height: 4rem;
+        background: rgba(0, 0, 0, 0.329);
+      }
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    &-btn {
+      background: transparent;
+      outline: none;
+      border: none;
+      position: absolute;
+      right: 0.5rem;
+      cursor: pointer;
+
+      &-img {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+
+  &_wishlist {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.26px;
+    font-weight: 500;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 1.5rem;
+    @media only screen and (max-width: 36.5em) {
+      margin: 0 1rem;
+    }
+    @media only screen and (max-width: 26em) {
+      margin: 0;
+    }
+    &-img {
+      // font-size: 100px;
+      height: 2rem !important;
+      width: 2rem !important;
+      margin: 0.5rem;
+    }
+    &-name {
+      @media only screen and (max-width: 26em) {
+        display: none;
+      }
+    }
+  }
+  &_cart {
+    display: flex;
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.26px;
+    font-weight: 500;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    @media only screen and (max-width: 36.5em) {
+      margin: 0 1rem;
+    }
+    @media only screen and (max-width: 26em) {
+      margin: 0;
+    }
+    &-img {
+      height: 2.5rem;
+      width: 2.5rem;
+      margin: 0.5rem;
+    }
+    &-name {
+      @media only screen and (max-width: 26em) {
+        display: none;
+      }
+    }
+  }
+  &_login {
+    @include font-face('Cabin', 1.5rem, 500);
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 2rem;
+    text-decoration: none;
+    @media only screen and (max-width: 36.5em) {
+      margin: 0 1rem;
+    }
+    @media only screen and (max-width: 26em) {
+      margin: 0;
+      margin-left: 0.4rem;
+    }
+  }
+}
+.nav {
+  background: $primary-black;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  &_item {
+    @include font-face('Montserrat', 1.25rem, 600);
+    // font-size: 1.25rem;
+    text-decoration: none;
+    color: white;
+    // font-family: 'Montserrat', sans-serif;
+    @media only screen and (max-width: 26em) {
+      font-size: 1.3rem;
+      letter-spacing: 0;
+    }
+  }
+}

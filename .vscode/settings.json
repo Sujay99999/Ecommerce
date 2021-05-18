@@ -1,0 +1,29 @@
+{
+  "git.autofetch": true,
+  "editor.formatOnSave": true,
+  "window.zoomLevel": 0,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "standard.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "standard.autoFixOnSave": true,
+  "cSpell.ignoreWords": [
+    "swipeable"
+  ],
+  "git.ignoreLimitWarning": true
+}

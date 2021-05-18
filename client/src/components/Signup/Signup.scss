@@ -1,0 +1,187 @@
+.signup {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background: linear-gradient(
+    180deg,
+    #74f062 0%,
+    #2e2e2e 0.01%,
+    rgba(88, 30, 122, 0.79) 100%
+  );
+  &_left {
+    width: 45%;
+    height: 100vh;
+    position: relative;
+    @media only screen and (max-width: 36.5em) {
+      width: 100%;
+    }
+    &-goback {
+      text-decoration: none;
+      font-size: 2.5rem;
+      color: white;
+      background: linear-gradient(180deg, #930696 -109%, #561f4a 80%);
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+    }
+  }
+  &_right {
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 36.5em) {
+      display: none;
+    }
+    &-container {
+      height: 35rem;
+      width: 55rem;
+      position: relative;
+      // background: black;
+      @media only screen and (max-width: 56.25em) {
+        height: 35rem;
+        width: 45rem;
+      }
+
+      @media only screen and (min-width: 112.5em) {
+        height: 50rem;
+      }
+
+      &-electro {
+        font-size: 10rem;
+        position: absolute;
+        left: 0;
+        top: 0rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.486);
+        letter-spacing: 1.3rem;
+        @media only screen and (min-width: 112.5em) {
+          top: 8rem;
+        }
+      }
+      &-buy {
+        font-size: 10rem;
+        position: absolute;
+        right: 0rem;
+        bottom: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.486);
+        letter-spacing: 1.3rem;
+      }
+      &-design {
+        position: absolute;
+        top: 5rem;
+        left: 0rem;
+        @media only screen and (min-width: 112.5em) {
+          height: 55rem;
+          width: 55rem;
+          top: 0;
+        }
+        @media only screen and (max-width: 56.25em) {
+          height: 40rem;
+          width: 40rem;
+          top: -3rem;
+        }
+      }
+    }
+  }
+  &-logo {
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    @media only screen and (max-width: 36.5rem) {
+      top: 10rem;
+      height: 12rem;
+      width: 12rem;
+    }
+
+    @media only screen and (min-width: 112.5em) {
+      height: 10rem;
+      width: 10rem;
+    }
+  }
+  &-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &-already {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.3rem;
+    padding-top: 0.5rem;
+    &-link {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 0 0 0.5rem 0.5rem;
+      border-bottom: 1px solid white;
+    }
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(0deg, #000000 -23.09%, #682559 128.35%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    @media only screen and (min-width: 112.5em) {
+      width: 40rem;
+    }
+    @media only screen and (max-width: 36.5em) {
+      width: 45rem;
+    }
+    &-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 2rem auto;
+      color: white;
+    }
+    &-label {
+      margin-left: 4rem;
+      font-size: 1.5rem;
+      color: white;
+      font-weight: 500;
+    }
+    &-input {
+      margin-left: 4rem;
+      width: 79%;
+      height: 2.7rem;
+      outline: none;
+      border: none;
+      border-radius: 0.5rem;
+      margin-bottom: 2rem;
+      padding-left: 1rem;
+      font-size: 1.5rem;
+      @media only screen and (min-width: 112.5em) {
+        height: 4rem;
+        font-size: 2rem;
+      }
+      @media only screen and (max-width: 36.5em) {
+        height: 4rem;
+        font-size: 2rem;
+      }
+    }
+    &-btn {
+      margin: 0 auto;
+      border: none;
+      background: linear-gradient(180deg, #930696 -109%, #561f4a 80%);
+      border-radius: 10px;
+      padding: 1rem 2rem;
+      margin-bottom: 2rem;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}

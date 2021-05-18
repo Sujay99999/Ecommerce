@@ -1,0 +1,80 @@
+.procard {
+  &-container {
+    background: linear-gradient(180deg, #000000 2.24%, #765970 54.9%);
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media only screen and (max-width: 36.5em) {
+      justify-content: space-around;
+    }
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+  background: white;
+  width: 25rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.5rem;
+  margin: 1rem;
+  &-img {
+    height: 15rem;
+    width: 20rem;
+    margin-top: 2rem;
+  }
+  &-bottom {
+    // background: linear-gradient(180deg, #71388b 0%, #000000 102.17%);
+    padding: 2rem;
+    background: linear-gradient(180deg, #5e3173 0.31%, #000000 102.17%);
+    border-bottom-left-radius: 1.3rem;
+    border-bottom-right-radius: 1.3rem;
+    height: 20rem;
+    position: relative;
+  }
+  &-info {
+    color: white;
+    font-family: 'Cabin', sans-serif;
+    margin-bottom: 1rem;
+    &-name {
+      font-size: 1.3rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+    &-price {
+      font-size: 1.8rem;
+      font-weight: 900;
+    }
+  }
+  &-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    left: 0;
+
+    &-wishlist {
+      background: none;
+      border: none;
+      &-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+      }
+    }
+    &-cart {
+      background: #581e7a;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      font-family: 'Cabin', sans-serif;
+      color: white;
+    }
+  }
+}
+.Link {
+  text-decoration: none;
+}

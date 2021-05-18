@@ -1,0 +1,111 @@
+.wishlist {
+  min-height: 79vh;
+  background: linear-gradient(
+    180deg,
+    #74f062 0%,
+    #2e2e2e 0.01%,
+    rgba(88, 30, 122, 0.79) 100%
+  );
+  &-heading {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    &-count {
+      font-size: 1.3rem;
+      color: rgba(255, 255, 255, 0.507);
+      margin-left: 1rem;
+    }
+  }
+  &_cont {
+    padding-top: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    // background-color: red;
+    @media only screen and (max-width: 26em) {
+      width: 100%;
+    }
+    padding-bottom: 3rem;
+    &-item {
+      display: flex;
+      padding: 1rem 2rem;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.301);
+      &:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.301);
+      }
+      &-img {
+        height: 12rem;
+        width: 12rem;
+        border-radius: 1.5rem;
+        margin-right: 3rem;
+      }
+      &-info {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        width: 80%;
+        @media only screen and (max-width: 26em) {
+          width: 100%;
+        }
+      }
+      &-title {
+        font-size: 1.7rem;
+        font-weight: 500;
+        padding-bottom: 1rem;
+      }
+      &-price {
+        font-size: 1.5rem;
+        font-weight: 600;
+        &-get {
+          // font-weight:;
+        }
+        &-original {
+          font-weight: 500;
+        }
+      }
+      &-btns {
+        position: absolute;
+        bottom: 2.5rem;
+        @media only screen and (max-width: 26em) {
+          bottom: 1rem;
+        }
+      }
+      &-remove {
+        border: none;
+        padding: 0.5rem 2rem;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 1.5rem;
+        margin-right: 2rem;
+        cursor: pointer;
+      }
+      &-move {
+        border: none;
+        padding: 0.5rem 2rem;
+        background: #581e7a;
+        color: white;
+        font-size: 1.5rem;
+        margin-right: 2rem;
+        cursor: pointer;
+      }
+      &-rating {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        font-size: 1.5rem;
+        @media only screen and (max-width: 56.25em) {
+          top: 75%;
+        }
+        @media only screen and (max-width: 26em) {
+          top: 45%;
+        }
+        &-none {
+          @media only screen and (max-width: 26em) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
